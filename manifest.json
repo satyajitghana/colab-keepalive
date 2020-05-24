@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Colab KeepAlive",
+    "description": "keeps your colab session alive by auto clicking the colab-connect-button",
+    "version": "0.1",
+    "homepage_url": "https://github.com/satyajitghana/colab-keepalive",
+    "content_scripts": [{
+        "matches": ["https://colab.research.google.com/*"],
+        "js": ["colab-alive.js"]
+    }],
+    "icons": {
+        "16": "icon/icon16.png",
+        "48": "icon/icon48.png",
+        "128": "icon/icon128.png"
+    }
+}
